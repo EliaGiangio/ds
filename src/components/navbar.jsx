@@ -13,19 +13,19 @@ import NavbarItem from './navbarItems'
 import NavbarItemMobile from './navbarItemsMobile'
 
 const events = [
-    { name: 'Competitions', link: "/competition-schedule" },
-    { name: 'All events', link: "/events" }
+    { name: 'Competitions', link: "/ds-site/competition-schedule" },
+    { name: 'All events', link: "/ds-site/events" }
 ]
 
 const projects = [
-    { name: 'Kids Club', link: "/kids-club" },
-    { name: 'Junior Lifting', link: "/junior-lifting" }
+    { name: 'Kids Club', link: "/ds-site/kids-club" },
+    { name: 'Junior Lifting', link: "/ds-site/junior-lifting" }
 ]
 
 const info = [
-    { name: 'General', link: "/info" },
-    { name: 'Warm Ups', link: "/warm-ups" },
-    { name: 'WL Programs', link: "/wl-programs" },
+    { name: 'General', link: "/ds-site/info" },
+    { name: 'Warm Ups', link: "/ds-site/warm-ups" },
+    { name: 'WL Programs', link: "/ds-site/wl-programs" },
 ]
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
         <header className="bg-white">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="/" className="-m-1.5 p-1.5">
+                    <a href="/ds-site/" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <img className="h-8 w-auto" src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1716289397/Dutch%20Strength/DutchStrengthbar_logo_aqx3gy.png" alt="" />
                     </a>
@@ -54,10 +54,10 @@ export default function Navbar() {
                     <NavbarItem title="Events" products={events} />
                     <NavbarItem title="Projects" products={projects} />
                     <NavbarItem title="Free Info" products={info} />
-                    <a href="/shop" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="/ds-site/shop" className="text-sm font-semibold leading-6 text-gray-900">
                         Shop
                     </a>
-                    <a href="/contacts" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="/ds-site/contacts" className="text-sm font-semibold leading-6 text-gray-900">
                         Contact
                     </a>
                 </Popover.Group>
@@ -68,7 +68,7 @@ export default function Navbar() {
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="/ds-site/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
@@ -92,13 +92,13 @@ export default function Navbar() {
                                 <NavbarItemMobile title="Projects" products={projects} />
                                 <NavbarItemMobile title="Free Info" products={info} />
                                 <a
-                                    href="/shop"
+                                    href="/ds-site/shop"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Shop
                                 </a>
                                 <a
-                                    href="/contact"
+                                    href="/ds-site/contact"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Contact
