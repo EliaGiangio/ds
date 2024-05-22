@@ -18,23 +18,23 @@ import GeneralInfo from './pages/general-info';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/ds-site/competition-schedule" element={<CompSchedule />} />
-          <Route path="/ds-site/events" element={<Events />} />
-          <Route path="/ds-site/contacts" element={<Contact />} />
-          <Route path="/ds-site/shop" element={<Shop />} />
-          <Route path="/ds-site/kids-club" element={<Project />} />
-          <Route path="/ds-site/info" element={<GeneralInfo />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </>
+
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/ds-site/competition-schedule" element={<CompSchedule />} />
+        <Route path="/ds-site/events" element={<Events />} />
+        <Route path="/ds-site/contacts" element={<Contact />} />
+        <Route path="/ds-site/shop" element={<Shop />} />
+        <Route path="/ds-site/kids-club" element={<Project />} />
+        <Route path="/ds-site/info" element={<GeneralInfo />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+      <Footer />
+    </Router>
+
   )
 }
 
