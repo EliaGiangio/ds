@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/ds-site/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/ds-site/competition-schedule" element={<CompSchedule />} />
           <Route path="/ds-site/events" element={<Events />} />
