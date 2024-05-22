@@ -5,6 +5,10 @@ import About from './pages/about';
 import ErrorPage from './pages/error';
 import CompSchedule from './pages/compschedule';
 import Events from './pages/events';
+import Contact from './pages/contact';
+import Shop from './pages/shop';
+import Project from './pages/project';
+import GeneralInfo from './pages/general-info';
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,6 +25,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/competition-schedule" element={<CompSchedule />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/contacts" element={<Contact />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/kids-club" element={<Project />} />
+          <Route path="/info" element={<GeneralInfo />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />

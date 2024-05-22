@@ -12,12 +12,20 @@ import {
 import NavbarItem from './navbarItems'
 import NavbarItemMobile from './navbarItemsMobile'
 
-const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+const events = [
+    { name: 'Competitions', link: "/competition-schedule" },
+    { name: 'All events', link: "/events" }
+]
+
+const projects = [
+    { name: 'Kids Club', link: "/kids-club" },
+    { name: 'Junior Lifting', link: "/junior-lifting" }
+]
+
+const info = [
+    { name: 'General', link: "/info" },
+    { name: 'Warm Ups', link: "/warm-ups" },
+    { name: 'WL Programs', link: "/wl-programs" },
 ]
 
 export default function Navbar() {
@@ -43,13 +51,13 @@ export default function Navbar() {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <NavbarItem title="Events" products={products} />
-                    <NavbarItem title="Projects" products={products} />
-                    <NavbarItem title="Free Info" products={products} />
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <NavbarItem title="Events" products={events} />
+                    <NavbarItem title="Projects" products={projects} />
+                    <NavbarItem title="Free Info" products={info} />
+                    <a href="/shop" className="text-sm font-semibold leading-6 text-gray-900">
                         Shop
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="/contacts" className="text-sm font-semibold leading-6 text-gray-900">
                         Contact
                     </a>
                 </Popover.Group>
@@ -80,17 +88,17 @@ export default function Navbar() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <NavbarItemMobile title="Events" products={products} />
-                                <NavbarItemMobile title="Projects" products={products} />
-                                <NavbarItemMobile title="Free Info" products={products} />
+                                <NavbarItemMobile title="Events" products={events} />
+                                <NavbarItemMobile title="Projects" products={projects} />
+                                <NavbarItemMobile title="Free Info" products={info} />
                                 <a
-                                    href="#"
+                                    href="/shop"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Shop
                                 </a>
                                 <a
-                                    href="#"
+                                    href="/contact"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Contact
