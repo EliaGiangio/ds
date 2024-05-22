@@ -1,3 +1,8 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import HomePage from './pages/home';
@@ -9,11 +14,7 @@ import Contact from './pages/contact';
 import Shop from './pages/shop';
 import Project from './pages/project';
 import GeneralInfo from './pages/general-info';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+
 
 function App() {
   return (
