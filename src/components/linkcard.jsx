@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function LinkCard({ name, description, link }) {
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="basis-1/3 flex-grow p-2">
