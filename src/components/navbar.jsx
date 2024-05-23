@@ -7,19 +7,19 @@ import { useNavigate } from 'react-router-dom';
 
 
 const events = [
-    { name: 'Competitions', link: "/ds-site/competition-schedule" },
-    { name: 'All events', link: "/ds-site/events" }
+    { name: 'Competitions', link: "/ds/competition-schedule" },
+    { name: 'All events', link: "/ds/events" }
 ]
 
 const projects = [
-    { name: 'Kids Club', link: "/ds-site/kids-club" },
-    { name: 'Junior Lifting', link: "/ds-site/junior-lifting" }
+    { name: 'Kids Club', link: "/ds/kids-club" },
+    { name: 'Junior Lifting', link: "/ds/junior-lifting" }
 ]
 
 const info = [
-    { name: 'General', link: "/ds-site/info" },
-    { name: 'Warm Ups', link: "/ds-site/warm-ups" },
-    { name: 'WL Programs', link: "/ds-site/wl-programs" },
+    { name: 'General', link: "/ds/info" },
+    { name: 'Warm Ups', link: "/ds/warm-ups" },
+    { name: 'WL Programs', link: "/ds/wl-programs" },
 ]
 
 export default function Navbar() {
