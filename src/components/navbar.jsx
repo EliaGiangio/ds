@@ -1,16 +1,10 @@
 import { useState } from 'react'
 import { Dialog, Popover } from '@headlessui/react'
-import {
-    ArrowPathIcon,
-    Bars3Icon,
-    ChartPieIcon,
-    CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
-    XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import NavbarItem from './navbarItems'
 import NavbarItemMobile from './navbarItemsMobile'
+import { useNavigate } from 'react-router-dom';
+
 
 const events = [
     { name: 'Competitions', link: "/ds-site/competition-schedule" },
@@ -30,12 +24,13 @@ const info = [
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const navigate = useNavigate();
 
     return (
         <header className="bg-white">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
-                    <a href="/ds-site/" className="-m-1.5 p-1.5">
+                    <a onClick={() => navigate('/ds/')} className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
                         <img className="h-8 w-auto" src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1716289397/Dutch%20Strength/DutchStrengthbar_logo_aqx3gy.png" alt="" />
                     </a>
@@ -54,10 +49,10 @@ export default function Navbar() {
                     <NavbarItem title="Events" products={events} />
                     <NavbarItem title="Projects" products={projects} />
                     <NavbarItem title="Free Info" products={info} />
-                    <a href="/ds-site/shop" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a onClick={() => navigate('/ds/shop')} className="text-sm font-semibold leading-6 text-gray-900">
                         Shop
                     </a>
-                    <a href="/ds-site/contacts" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a onClick={() => navigate('/ds/contacts')} className="text-sm font-semibold leading-6 text-gray-900">
                         Contact
                     </a>
                 </Popover.Group>
@@ -68,7 +63,7 @@ export default function Navbar() {
                 <div className="fixed inset-0 z-10" />
                 <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
-                        <a href="/ds-site/" className="-m-1.5 p-1.5">
+                        <a onClick={() => navigate('/ds/')} className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <img
                                 className="h-8 w-auto"
@@ -92,13 +87,13 @@ export default function Navbar() {
                                 <NavbarItemMobile title="Projects" products={projects} />
                                 <NavbarItemMobile title="Free Info" products={info} />
                                 <a
-                                    href="/ds-site/shop"
+                                    onClick={() => navigate('/ds/shop')}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Shop
                                 </a>
                                 <a
-                                    href="/ds-site/contact"
+                                    onClick={() => navigate('/ds/contact')}
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Contact

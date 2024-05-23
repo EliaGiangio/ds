@@ -1,11 +1,14 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { useNavigate } from 'react-router-dom';
+
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
 
 export default function NavbarItemMobile({ title, products }) {
+    const navigate = useNavigate();
     return (
         <Disclosure as="div" className="-mx-3">
             {({ open }) => (
@@ -22,7 +25,7 @@ export default function NavbarItemMobile({ title, products }) {
                             <Disclosure.Button
                                 key={item.name}
                                 as="a"
-                                href={item.href}
+                                onClick={() => navigate(item.link)}
                                 className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                             >
                                 {item.name}
