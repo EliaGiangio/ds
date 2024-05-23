@@ -15,7 +15,7 @@ export default function LandingPage() {
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                             </svg>
                         </a>
-                        <a href="/ds-site/about" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-orange-200 focus:ring-4 focus:ring-gray-400" onClick={() => navigate('/ds-site/about')}>
+                        <a href="/ds-site/about" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-orange-200 focus:ring-4 focus:ring-gray-400" onClick={() => navigate('/ds-new-site/about')}>
                             Learn more
                         </a>
                     </div>

@@ -22,14 +22,14 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/ds-site/" element={<HomePage />} />
-        <Route path="/ds-site/about" element={<About />} />
-        <Route path="/ds-site/competition-schedule" element={<CompSchedule />} />
-        <Route path="/ds-site/events" element={<Events />} />
-        <Route path="/ds-site/contacts" element={<Contact />} />
-        <Route path="/ds-site/shop" element={<Shop />} />
-        <Route path="/ds-site/kids-club" element={<Project />} />
-        <Route path="/ds-site/info" element={<GeneralInfo />} />
+        <Route exact path="/ds-new-site/" element={<HomePage />} />
+        <Route path="/ds-new-site/about" element={<About />} />
+        <Route path="/ds-new-site/competition-schedule" element={<CompSchedule />} />
+        <Route path="/ds-new-site/events" element={<Events />} />
+        <Route path="/ds-new-site/contacts" element={<Contact />} />
+        <Route path="/ds-new-site/shop" element={<Shop />} />
+        <Route path="/ds-new-site/kids-club" element={<Project />} />
+        <Route path="/ds-new-site/info" element={<GeneralInfo />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
