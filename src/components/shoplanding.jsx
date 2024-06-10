@@ -24,37 +24,14 @@ export default function ShopLanding() {
                                         <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                             <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                                                 <img
-                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717397781/Dutch%20Strength/Merch%20photo/pic5_fueueq.jpg"
+                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1718023016/Dutch%20Strength/Merch%20photo/Screenshot_2024-06-10_at_14.36.21_ipjjxj.png"
                                                     alt=""
                                                     className="h-full w-full object-cover object-center"
                                                 />
                                             </div>
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <img
-                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717397781/Dutch%20Strength/Merch%20photo/pic4_atae7h.heic"
-                                                    alt=""
-                                                    className="h-full w-full object-cover object-center"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                <img
-                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717397781/Dutch%20Strength/Merch%20photo/pic6_tkluwo.heic"
-                                                    alt=""
-                                                    className="h-full w-full object-cover object-center"
-                                                />
-                                            </div>
-                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                <img
-                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717397781/Dutch%20Strength/Merch%20photo/main_dvtfum.heic"
-                                                    alt=""
-                                                    className="h-full w-full object-cover object-center"
-                                                />
-                                            </div>
-                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                                                <img
-                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717397781/Dutch%20Strength/Merch%20photo/pic3_wsdpy5.heic"
+                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1718023015/Dutch%20Strength/Merch%20photo/Screenshot_2024-06-10_at_14.35.23_ddpdss.png"
                                                     alt=""
                                                     className="h-full w-full object-cover object-center"
                                                 />
@@ -63,7 +40,30 @@ export default function ShopLanding() {
                                         <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                                                 <img
-                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717397781/Dutch%20Strength/Merch%20photo/pic1_bwij38.jpg"
+                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1718023015/Dutch%20Strength/Merch%20photo/Screenshot_2024-06-10_at_14.35.39_y3fakj.png"
+                                                    alt=""
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            </div>
+                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                <img
+                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1718023016/Dutch%20Strength/Merch%20photo/Screenshot_2024-06-10_at_14.36.07_mw2eei.png"
+                                                    alt=""
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            </div>
+                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                <img
+                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1718023015/Dutch%20Strength/Merch%20photo/Screenshot_2024-06-10_at_14.35.54_qqb6pi.png"
+                                                    alt=""
+                                                    className="h-full w-full object-cover object-center"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                                                <img
+                                                    src="https://res.cloudinary.com/dggfjc8rb/image/upload/v1717398066/Dutch%20Strength/Merch%20photo/pic1_ou3pks.jpg"
                                                     alt=""
                                                     className="h-full w-full object-cover object-center"
                                                 />
